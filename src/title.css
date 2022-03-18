@@ -1,0 +1,20 @@
+.scene__title {
+    position: absolute;
+    top: calc(var(--phoneWidth) * -.75);
+    left: calc(var(--phoneWidth) * -2);
+    transform: rotateY(45deg);
+    width: calc(var(--phoneWidth) * 2);
+    border: 3px solid plum;
+    padding: .2em;
+    border-radius: 20px;
+    box-shadow: 0 0 .2em plum, 0 0 .08em #fff inset, 0 0 .2em plum inset;
+}
+
+.scene__title span {
+    font-size: calc(var(--phoneWidth) / 2);
+    color: #fff;
+    font-family:    fantasy;
+    text-shadow: 0 0 .05em #fff, 0 0 .2em plum;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: plum;
+}

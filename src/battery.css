@@ -1,0 +1,48 @@
+.battery {
+    height: calc(var(--phoneWidth) / 20 - 10px);
+    width: calc(var(--phoneWidth) / 10 - 10px);
+    border: 1px solid #fff;
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+    padding: 2px;
+    cursor: pointer;
+    transition: .5s transform ease-in;
+    opacity: 0;
+    animation: startPhoneApplications 3s linear forwards;
+    animation-delay: 1.5s;
+    z-index: 4;
+}
+
+.battery__life {
+    height: 100%;
+    width: 25%;
+    background-color: rgba(228, 31, 31, 0.87);
+    border-radius: 15px;
+}
+
+.battery:hover .battery__life {
+    animation: batterLife 2s ease-in forwards;
+}
+
+.battery:hover {
+    transform: scale(2) translate(-.05em);
+    z-index: 3;
+}
+
+@keyframes batterLife {
+    0% {
+        width: 25%;
+        background-color: rgba(228, 31, 31, 0.87);
+    }
+
+    50% {
+        width: 60%;
+        background-color: rgba(228, 143, 31, 0.87);
+    }
+
+    100% {
+        width: 95%;
+        background-color: #58eb03cc;
+    }
+}

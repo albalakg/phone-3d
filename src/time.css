@@ -1,0 +1,18 @@
+.time span {
+    color: #fff;
+    font-size: calc(var(--phoneWidth) / 20);
+    font-family: sans-serif;
+    position: absolute;
+    cursor: pointer;
+    transition: .5s transform ease-out;
+    text-shadow: -.1em -.1em .2em #fff5;
+    opacity: 0;
+    animation: startPhoneApplications 3s linear forwards;
+    animation-delay: 1.5s;
+    z-index: 4;
+}
+
+.time span:hover {
+    transform: scale(3) translate(-.2em);
+    text-shadow: -.1em -.1em .2em #fffa;
+}

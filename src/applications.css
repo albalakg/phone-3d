@@ -1,0 +1,53 @@
+.applications__wrapper {
+    height: calc(75% - 20px);
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: calc(10% + 15px);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.application {
+    height: calc(var(--phoneWidth) / 7);
+    width: calc(var(--phoneWidth) / 7);
+    background: linear-gradient(90deg, #fff 80%, #0005),
+                linear-gradient(#fff 80%, #0005);
+    border-radius: calc(var(--phoneWidth) / 20);
+    margin: 0 calc(var(--phoneWidth) / 100);
+    cursor: pointer;
+    position: relative;
+    box-shadow: -.05em -.05em .2em #fff5,
+                0.2em 0.2em 0.2em .02em #0008;
+    transition: .5s transform ease-out, .5s box-shadow ease-out;
+}
+
+.applications__wrapper .application {
+    margin-bottom: .2em;
+}
+
+.application:hover {
+    transform: scale(2.5) translate(calc(var(--phoneWidth) / 15 * -1));
+    box-shadow: -0.1em -0.1em 0.2em #fff5,
+                0.2em 0.2em 0.2em .02em #0008;
+}
+
+.favorite__applications {
+    background-color: #fff1;
+    height: calc(15% - var(--phoneWidth) / 10);
+    width: calc(100% - 35px);
+    position: absolute;
+    bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.application > div {
+    border-radius: calc(var(--phoneWidth) / 20);
+    position: relative;
+}

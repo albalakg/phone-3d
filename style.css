@@ -1,0 +1,39 @@
+:root {
+
+    /* Phone */
+    --phoneWidth: 3em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 10em;
+    perspective-origin: 50% 30%;
+}
+
+.scene {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: sceneMoving 4s infinite linear;
+}
+
+@keyframes sceneMoving {
+    0%, 100% {
+        
+    }
+    
+    50% {
+        transform: translateY(.1em);
+    }
+
+}

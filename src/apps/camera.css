@@ -1,0 +1,25 @@
+.camera__app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera__app__lens {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #000 15%, #222 30%, #666);
+    position: relative;
+}
+
+.camera__app__light {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #f00, #fff, #fff);
+    left: 25%;
+    top: 25%;
+}

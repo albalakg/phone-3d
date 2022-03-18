@@ -1,0 +1,43 @@
+.tasks {
+    height: calc(100% - 5px);
+    width: 100%;
+    position: absolute;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.task {
+    height: calc(100% - 10px);
+    width: 100%;
+    padding-left: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.task__bullet {
+    height: calc(var(--phoneWidth) / 40);
+    width: calc(var(--phoneWidth) / 40);
+    border-radius: 50%;
+}
+
+.task__text {
+    height: 1px;
+    width: 30%;
+    margin-left: 10%;
+    background-color: #0008;
+}
+
+.task:nth-of-type(1) .task__bullet {
+    background: radial-gradient(circle at center, #00f, #fff0 90%);
+}
+
+.task:nth-of-type(2) .task__bullet {
+    background: radial-gradient(circle at center, #f00, #fff0 90%);
+}
+
+.task:nth-of-type(3) .task__bullet {
+    background: radial-gradient(circle at center, #ff0, #fff0 90%);
+}

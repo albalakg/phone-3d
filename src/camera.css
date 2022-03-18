@@ -1,0 +1,30 @@
+.camera {
+    background-color: #000;
+    height: 5%;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 0 17px 17px;
+    z-index: 2;
+    box-shadow: 0 -.02em .01em #5552 inset;
+}
+
+.camera__lens {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 7%;
+    margin: auto;
+    background: radial-gradient(circle at center, #000, #fff3 20%, #000 30%);
+    height: calc(var(--phoneWidth) / 20);
+    width: calc(var(--phoneWidth) / 20);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .1s box-shadow linear;
+}
+
+.camera__lens:active {
+    box-shadow: -.1em -.1em 2em 1em #fff;
+}
